@@ -8,12 +8,13 @@ Gem::Specification.new do |s|
   s.description = %q{Rails plugin that add reports integrated with ActiveRecord's model.}
   s.email = %q{kosukematsuda+github@gmail.com}
   s.extra_rdoc_files = ["README", "CHANGELOG"]
-  s.files = ["README", "CHANGELOG", "Rakefile", "test/acts_as_reportable_test.rb", "lib/acts_as_reportable.rb", "lib/report.rb"]
+  # s.files = ["README", "CHANGELOG", "Rakefile", "test/acts_as_reportable_test.rb", "lib/acts_as_reportable.rb", "lib/report.rb"]
+  s.files = ["README", "CHANGELOG", "Rakefile", "MIT-LICENSE", "init.rb", "uninstall.rb", "install.rb", "lib", "lib/acts_as_reportable.rb", "lib/report.rb", "generators", "generators/acts_as_reportable_migration", "generators/acts_as_reportable_migration/acts_as_reportable_migration_generator.rb", "generators/acts_as_reportable_migration/templates", "generators/acts_as_reportable_migration/templates/migration.rb", "tasks", "tasks/acts_as_reportable_tasks.rake", "test", "test/acts_as_reportable_test.rb"]
   s.has_rdoc = true
-  s.homepage = %q{http://acts_as_reportable.rubyforge.org}
+  s.homepage = %q{http://github.com/mat5uda/acts_as_reportable/}
   s.rdoc_options = ["--title", "acts_as_reportable documentation", "--charset", "utf-8", "--opname", "index.html", "--line-numbers", "--main", "README", "--inline-source", "--exclude", "^(examples|extras)/"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{acts_as_reportable}
+  # s.rubyforge_project = %q{acts_as_reportable}
   s.rubygems_version = %q{1.2.0}
   s.summary = %q{Rails plugin that add reports integrated with ActiveRecord's model.}
   s.test_files = ["test/acts_as_reportable_test.rb"]
