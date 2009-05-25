@@ -1,0 +1,32 @@
+ActsAsReportable
+================
+= acts_as_reportable
+
+If you find this plugin useful, please consider a donation to show your support!
+
+  Email address: http://mailhide.recaptcha.net/d?k=01tbvZRMv6m4J3RSv83eaXNg==&c=cVnfIjyDvPxxIAJq4jN8ZkHEm9lxrGLjMZfphLmTHLE=
+  
+== Instructions
+
+== Installation
+
+  ruby script/plugin install git://github.com/mat5uda/acts_as_reportable.git
+
+== Usage
+
+=== Prepare database
+
+Generate and apply the migration:
+
+  ruby script/generate acts_as_reportable_migration
+  rake db:migrate
+
+=== Basic tagging
+
+Let's suppose users have many posts and we want those posts to have tags.
+The first step is to add +acts_as_reportable+ to the Post class:
+
+  class Post < ActiveRecord::Base
+    acts_as_reportable
+  end
+  
